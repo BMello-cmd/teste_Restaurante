@@ -1,11 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header class="cabecalho">
+        <h1>Los Pollos Hermanos</h1>
+    </header>
+
+    <main class="principal">
+        <div class="conteudo">
+            <h2>Seja bem vindo!</h2>
+            <p>O melhor restaurante da cidade</p>
+        </div>
+
+        <div class="container-contato">
+            <h2>Contato</h2>
+            <form class="formulario-contato">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+
+                <button type="submit">Enviar</button>
+        </div>
+            </form>
+
+        <div class="container-documentacao">
+            <h2>Solicitação de Documentação</h2>
+            <table id="tabela-documentacao" border="1">
+                <thead>
+                    <tr>
+                        <th>RG</th>
+                        <th>CPF</th>
+                    </tr>
+                    <tr>
+                        <th contenteditable="true">ex: 00.000.000</th>
+                        <th contenteditable="true">ex: 000.000.000-00</th>
+                    </tr>
+                </thead>
+            </table>
+            <button type="reset"> Limpar</button>
+            <button type="submit"> Enviar</button>
+        </div>
+
+        <div class="cardapio">
+            <h2>Cardápio</h2>
+            <ul>
+                <li>Frango Assado - R$ 25,00</li>
+                <img src="https://static.itdg.com.br/images/640-auto/11b5cb5197267074af5e3d566862fd70/shutterstock-2478209047.jpg" alt="Frango Assado">
+                <li>Batata Frita - R$ 10,00</li>
+                <img src="https://media.gettyimages.com/id/148349643/pt/foto/as-batatas-fritas.jpg?s=612x612&w=gi&k=20&c=9yJJItQmXSlUoUJpMasRUbSJ2-e707JpfK_pxZs7DZs=" alt="Batata Frita">
+                <li>Refrigerante - R$ 5,00</li>
+                <img src="https://media.istockphoto.com/id/179035469/pt/foto/alum%C3%ADnio-pode.jpg?s=612x612&w=0&k=20&c=NyuLS2gkeOGgS1fnJuVo5SvitrRZOQ6GKBsM4SShjUM=" alt="Refrigerante">
+            </ul>
+        </div>
+
+    <footer>
+        <div class="reclamacoes">
+            <h2>Reclamações</h2>
+            <form class="formulario-reclamacoes">
+                <label for="reclamacao">Deixe sua reclamação:</label>
+                <textarea id="reclamacao" name="reclamacao" required></textarea>
+                <button type="submit">Enviar</button>
+        </div>
+    </footer>
 </body>
 </html>
